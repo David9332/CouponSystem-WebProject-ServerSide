@@ -11,7 +11,7 @@ import org.springframework.stereotype.Component;
 
 import java.util.Date;
 
-//@Configuration
+@Configuration
 @EnableScheduling
 @RequiredArgsConstructor
 public class DailyJobThread {
