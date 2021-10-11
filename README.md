@@ -1,2 +1,4 @@
 # CouponSystem-WebProject-ServerSide
-The server side of project 3.
+The server side of the web project.
+
+
