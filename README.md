@@ -1,2 +1,2 @@
 # CouponSystem-WebProject-ServerSide
-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+The server side of project 3.
