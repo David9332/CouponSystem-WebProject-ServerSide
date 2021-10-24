@@ -24,7 +24,6 @@ public class AdminController {
 
     private final JWTutil jwTutil;
     private final AdminImpl adminImpl;
-    private final CompaniesImpl companiesImpl;
     private final CustomersImpl customersImpl;
 
 
