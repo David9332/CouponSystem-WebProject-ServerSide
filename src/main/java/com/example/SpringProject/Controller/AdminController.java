@@ -32,15 +32,7 @@ public class AdminController {
         if (adminImpl.login(userDetails.getEmail(), userDetails.getPassword())) {
             String myToken = jwTutil.generateToken(new UserDetails(userDetails.getEmail(), 0, ClientType.ADMINISTRATOR));
             return new ResponseEntity<>(myToken, HttpStatus.ACCEPTED);
-        }
-        return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
-    }
-
-    @GetMapping("getAllCompanies")
-    public ResponseEntity<?> getCompanies(@RequestHeader(name = "Authorization") String token) {
-        if (jwTutil.validateToken(token)) {
-            return ResponseEntity.ok()
-                    .header("Authorization", jwTutil.generateToken(new UserDetails(
+        }thorization", jwTutil.generateToken(new UserDetails(
                             jwTutil.extractEmail(token),
                             ClientType.ADMINISTRATOR)))
                     .body(adminImpl.getAllCompanies());
